@@ -5,9 +5,27 @@ function Head(){
     <h1>Hello Wolrd</h1>
   );
 }
+function AddItem(props){
+  const value=props.text;
+  return(
+    <form>
+      <label>Type something: </label>
+      <input type="text" value={value} name="blah" id="blah" />
+    </form>
+  );
+}
 function App() {
   return (
-    <Head/>
+    
+    <div className="App">
+      <Head/>
+      <AddItem text ="Bht"/>
+      <AddItem/>
+      <AddItem/>
+      <AddItem/>
+
+
+    </div>
   );
 }
 
