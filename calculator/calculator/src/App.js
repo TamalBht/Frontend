@@ -2,7 +2,7 @@
 import './App.css';
 import Wrapper from "./components/wrapper";
 import Screen from "./components/screen";
-import ButtonBox from "./components/buttonBox";
+import ButtonBox from "./components/buttobBox";
 import Button from "./components/button";
 
 
