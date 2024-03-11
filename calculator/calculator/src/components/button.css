@@ -1,6 +1,6 @@
 button {
     border: none;
-    background-color: rgb(80, 60, 209);
+    background:linear-gradient(rgba(96, 77, 222, 0.497),rgb(80, 60, 209)) ;
     font-size: 24px;
     color: rgb(255, 255, 255);
     font-weight: bold;
