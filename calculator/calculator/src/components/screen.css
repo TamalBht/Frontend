@@ -11,4 +11,6 @@
     color: white;
     font-weight: bold;
     box-sizing: border-box;
+    transition: all ease-in-out 550ms;
+
   }
