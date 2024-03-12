@@ -17,14 +17,21 @@ function App() {
     <Wrapper>
       <Screen value="0" />
       <ButtonBox>
+        {
+          btnValues.flat().map((btn, i) => {
+            return (
+              <Button
+                key={i}
+                className={btn === "=" ? "equals" : ""}
+                value={btn}
+                onClick={() => {
+                  console.log(`${btn} clicked!`);
+                }}
+              />
+            );
+          })
+        }
         
-        <Button
-          className=""
-          value="0"
-          onClick={() => {
-            console.log("Button clicked!");
-          }}
-        />
       </ButtonBox>
     </Wrapper>
   );
