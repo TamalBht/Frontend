@@ -1,9 +1,10 @@
 import Wrapper from './Components/wrapper';
+import Box from"./Components/box";
 import './App.css';
 
 function App() {
   return (
-    <Wrapper/>
+    <Wrapper><Box></Box></Wrapper>
   );
 }
 
