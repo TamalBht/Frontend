@@ -1,0 +1,12 @@
+.wrapper{
+    height: 65vh;
+    width:40vw;
+    background:black;
+    display: flex;
+    position:relative;
+    justify-self: center;
+    align-self: center;
+    left:20vw;
+    top:10vh;
+    border-radius: 10px;
+}

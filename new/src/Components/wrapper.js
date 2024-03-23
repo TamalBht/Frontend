@@ -5,3 +5,4 @@ function Wrapper({children}){
     );
 }
 export default Wrapper;
+//basically the main box 

@@ -1,9 +1,9 @@
-
+import Wrapper from './Components/wrapper';
 import './App.css';
 
 function App() {
   return (
-    <h>Hello</h>
+    <Wrapper/>
   );
 }
 
