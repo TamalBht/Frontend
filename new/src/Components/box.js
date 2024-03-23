@@ -4,4 +4,4 @@ function Box(){
         <button className="box">X</button>
     );
 }
-export default Wrapper;
+export default Box;
