@@ -1,6 +1,6 @@
 import "./box.css";
 function Box(){
     return(
-        <button className="box"></button>
+        <button className="box">X</button>
     );
 }
