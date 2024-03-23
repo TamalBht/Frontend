@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <Wrapper>
-      
+      {<Box></Box>}
     
     </Wrapper>
   );
