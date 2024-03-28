@@ -1,10 +1,11 @@
 .box{
     position:relative;
-    padding:10px;
-    top:-20px;
+    padding: 0;
+    
+    
     width:33.33%;
-    height: 50%;
-    aspect-ratio: 1;
+    height: 100%;
+    
     color: aliceblue;
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
                 radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
