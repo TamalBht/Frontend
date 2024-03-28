@@ -5,15 +5,21 @@ import './App.css';
 function App() {
   return (
     <Wrapper>
-      <Box></Box>
-      <Box></Box>
-      <Box></Box>
-      <Box></Box>
-      <Box></Box>
-      <Box></Box>
-      <Box></Box>
-      <Box></Box>
-      <Box></Box>
+      <div className="board-row">
+      <Box className="square"></Box>
+      <Box className="square"></Box>
+      <Box className="square"></Box>
+      </div>
+      <div className="board-row">
+      <Box className="square"></Box>
+      <Box className="square"></Box>
+      <Box className="square"></Box>
+      </div>
+      <div className="board-row">
+      <Box className="square"></Box>
+      <Box className="square"></Box>
+      <Box className="square"></Box>
+      </div>
 
     </Wrapper>
   );
