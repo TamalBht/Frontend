@@ -2,11 +2,11 @@
   text-align: center;
 }
 .board-row{
-  transform: scale(2);
-  margin:60px;
+
+  
   position: relative;
-  left:80vw;
-  top: 20vh;
+  
+  
 }
 #top-left-box{
   border-top-left-radius: 10px;
