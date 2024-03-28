@@ -1,10 +1,11 @@
 .wrapper{
     height: 50vh;
     width:40vw;
-    left: 50vh;
+    left: 30vw;
     top: 25vh;
+    border-radius: 20px;
     
-    background:white;
+    background:transparent;
 
     position:relative;
     

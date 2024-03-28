@@ -6,7 +6,7 @@ function Box(){
         setValue('X');
 
     }
-    const [value,setValue]=useState(null);
+    const [value,setValue]=useState('‎');
     return(
         <button className="box" onClick={handleClick}>{value}</button>
     );
