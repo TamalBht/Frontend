@@ -4,24 +4,8 @@ import './App.css';
 
 function App() {
   return (
-    <Wrapper>
-      <div className="board-row">
-      <Box className="square" idName="top-left-box"></Box>
-      <Box className="square"></Box>
-      <Box className="square" idName="top-right-box"></Box>
-      </div>
-      <div className="board-row">
-      <Box className="square" ></Box>
-      <Box className="square"></Box>
-      <Box className="square"></Box>
-      </div>
-      <div className="board-row">
-      <Box className="square" idName="bottom-left-box"></Box>
-      <Box className="square"></Box>
-      <Box className="square" idName="bottom-right-box"></Box>
-      </div>
-
-    </Wrapper>
+    <Wrapper/>
+     
   );
 }
 
