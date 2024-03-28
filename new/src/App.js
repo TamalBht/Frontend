@@ -16,9 +16,9 @@ function App() {
       <Box className="square"></Box>
       </div>
       <div className="board-row">
+      <Box className="square" idName="bottom-left-box"></Box>
       <Box className="square"></Box>
-      <Box className="square"></Box>
-      <Box className="square"></Box>
+      <Box className="square" idName="bottom-right-box"></Box>
       </div>
 
     </Wrapper>
