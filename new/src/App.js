@@ -6,6 +6,15 @@ function App() {
   return (
     <Wrapper>
       <Box></Box>
+      <Box></Box>
+      <Box></Box>
+      <Box></Box>
+      <Box></Box>
+      <Box></Box>
+      <Box></Box>
+      <Box></Box>
+      <Box></Box>
+
     </Wrapper>
   );
 }
