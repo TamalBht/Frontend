@@ -1,7 +1,8 @@
 import "./box.css";
-function Box(){
+function Box(props){
+    const value=props.text;
     return(
-        <button className="box">X</button>
+        <button className="box">{value}</button>
     );
 }
 export default Box;

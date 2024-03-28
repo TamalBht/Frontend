@@ -11,7 +11,7 @@ function App() {
       <Box className="square" idName="top-right-box"></Box>
       </div>
       <div className="board-row">
-      <Box className="square"></Box>
+      <Box className="square" ></Box>
       <Box className="square"></Box>
       <Box className="square"></Box>
       </div>

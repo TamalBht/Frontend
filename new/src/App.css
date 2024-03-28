@@ -8,3 +8,6 @@
   left:80vw;
   top: 20vh;
 }
+#top-left-box{
+  border-top-left-radius: 10px;
+}
