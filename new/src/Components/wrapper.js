@@ -1,8 +1,28 @@
 import "./wrapper.css";
+import Box from "./box.js";
 
-function Wrapper({children}){
+function Wrapper(){
     return(
-        <div className="wrapper">{children}</div>
+        <div className="wrapper">
+            <div className="board-row">
+                <Box></Box>
+                <Box></Box>
+                <Box></Box>
+
+            </div>
+            <div className="board-row">
+                <Box></Box>
+                <Box></Box>
+                <Box></Box>
+
+            </div> 
+            <div className="board-row">
+                <Box></Box>
+                <Box></Box>
+                <Box></Box>
+
+            </div>
+        </div>
     );
 }
 

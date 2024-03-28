@@ -5,24 +5,7 @@ import './App.css';
 function App() {
   return (
     <Wrapper>
-      <div className="board-row">
-                <Box></Box>
-                <Box></Box>
-                <Box></Box>
-
-            </div>
-            <div className="board-row">
-                <Box></Box>
-                <Box></Box>
-                <Box></Box>
-
-            </div> 
-            <div className="board-row">
-                <Box></Box>
-                <Box></Box>
-                <Box></Box>
-
-            </div>
+      
     </Wrapper>
      
   );
