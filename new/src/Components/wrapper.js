@@ -4,25 +4,28 @@ import { useState } from 'react';
 
 
 function Wrapper(){
-    const [xIsNext, setXIsNext] = useState(true);
-    const [squares, setSquares] = useState(Array(9).fill(''));
+    const [xIsNext, setXIsNext] = useState(true);//in this X is defined as the default first player
+    const [squares, setSquares] = useState(Array(9).fill('‎'));//initially all the boxes are set to null and we are doin this in the parent element rather than the child element
+    //the parent element is used to record so that we can keep track odf the states of all the boxes without using them
     function handleClick(i) {
-        if (squares[i]) {
+        if (squares[i]!=='‎') {//used to check if the square is already used or not
           return;
         }
-        const nextSquares = squares.slice();
+        const nextSquares = squares.slice();//the entire thing is sliced into an array
         if (xIsNext) {
-          nextSquares[i] = 'X';
+          nextSquares[i] = 'X';//if condition is satisfied then X is written on ith element i.e ith box
         } else {
           nextSquares[i] = 'O';
         }
         setSquares(nextSquares);
         setXIsNext(!xIsNext);
-      }
+      }//next onSquareClick is a prop function that is passed after clicking on the button
+      //now the value of the squareClick is decided by handleclick(i)
     return(
         <div className="wrapper">
             <div className="board-row">
                 <Box value={squares[0]} onSquareClick={() => handleClick(0)}></Box>
+                
                 <Box value={squares[1]} onSquareClick={() => handleClick(1)}></Box>
                 <Box value={squares[2]} onSquareClick={() => handleClick(2)}></Box>
 
