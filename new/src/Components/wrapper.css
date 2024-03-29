@@ -22,7 +22,7 @@
     font-weight: 800;
     font-family: Arial, Helvetica, sans-serif;
 }
-@media (min-width:767px) {
+@media (max-width:767px) {
     .wrapper{
         width: 50vw;
         height: 40vh;
