@@ -32,8 +32,9 @@ function Wrapper(){
       //next onSquareClick is a prop function that is passed after clicking on the button
       //now the value of the squareClick is decided by handleclick(i)
     return(
+        <>
+              <div className="status">{status}</div>
         <div className="wrapper">
-            <div className="status">{status}</div>
             <div className="board-row">
                 <Box value={squares[0]} onSquareClick={() => handleClick(0)}></Box>
                 <Box value={squares[1]} onSquareClick={() => handleClick(1)}></Box>
@@ -53,6 +54,7 @@ function Wrapper(){
 
             </div>
         </div>
+        </>
     );
 }
 
