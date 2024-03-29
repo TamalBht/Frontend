@@ -1,14 +1,10 @@
 import "./box.css";
 import { useState } from 'react';
 
-function Box(){
-    function handleClick(){
-        setValue('X');
-
-    }
-    const [value,setValue]=useState('‎');
+function Box({value,onSquareClick}){
+    
     return(
-        <button className="box" onClick={handleClick}>{value}</button>
+        <button className="box" onClick={onSquareClick}>{value}</button>
     );
 }
 export default Box;
