@@ -13,7 +13,8 @@ function Wrapper(){
         const nextSquares = squares.slice();
         if (xIsNext) {
           nextSquares[i] = 'X';
-        } else {
+        } 
+        else {
           nextSquares[i] = 'O';
         }
         setSquares(nextSquares);
@@ -24,8 +25,14 @@ function Wrapper(){
     let status;
     if (winner) {
         status = 'Winner: ' + winner;
-    } else {
+    }
+    else if(!squares.includes('‎')){
+            status='Draw';
+    } 
+    
+    else {
         status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+
     }
       
     return(
