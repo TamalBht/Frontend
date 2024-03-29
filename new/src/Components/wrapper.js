@@ -24,9 +24,7 @@ function Wrapper(){
       let status;
       if (winner) {
         status = 'Winner: ' + winner;
-      } else {
-        status = 'Next player: ' + (xIsNext ? 'X' : 'O');
-      }
+      } 
 
       
       //next onSquareClick is a prop function that is passed after clicking on the button
