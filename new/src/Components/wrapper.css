@@ -1,3 +1,7 @@
+@font-face {
+    font-family: scribble;
+    src: url(./RubikScribble-Regular.ttf);
+  }
 .wrapper{
     height: 50vh;
     width:40vw;
@@ -20,7 +24,8 @@
     font-size: 50px;
     text-align: center;
     font-weight: 800;
-    
+    font-family: scribble;
+
 }
 @media (max-width:767px) {
     .wrapper{
