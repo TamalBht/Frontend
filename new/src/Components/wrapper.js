@@ -32,6 +32,7 @@ function Wrapper(){
       //now the value of the squareClick is decided by handleclick(i)
     return(
         <div className="wrapper">
+            <div className="status">{status}</div>
             <div className="board-row">
                 <Box value={squares[0]} onSquareClick={() => handleClick(0)}></Box>
                 
