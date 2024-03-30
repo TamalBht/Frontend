@@ -3,22 +3,22 @@ import Box from "./box.js";
 import { useState } from 'react';
 
 function Wrapper(){
-    const [xIsNext, setXIsNext] = useState(true);
+    const [xIsNext, setXIsNext] = useState(true);//initially the first player is set as X by default
     const [squares, setSquares] = useState(Array(9).fill('‎')); // Filled with whitespace character
 
     function handleClick(i) {
         if (squares[i] !== '‎' || calculateWinner(squares)) { // Check for whitespace character
           return;
         }
-        const nextSquares = squares.slice();
+        const nextSquares = squares.slice();//in this the next square contains the array of information about board i.e the array conatinning whitespace x and 0
         if (xIsNext) {
           nextSquares[i] = 'X';
-        } 
+        } //in this the board is updates to with X  at the index and at first it checks whether xIsNext is true or not.Inititally it is set to true so it is updated
         else {
           nextSquares[i] = 'O';
         }
-        setSquares(nextSquares);
-        setXIsNext(!xIsNext);
+        setSquares(nextSquares);//the previous value of array is updated with the new value of array from board
+        setXIsNext(!xIsNext);//here the point where xIsNext is changed so that both the palyers can play
     }
 
     const winner = calculateWinner(squares);
@@ -27,7 +27,7 @@ function Wrapper(){
         status = 'Winner: ' + winner;
     }
     else if(!squares.includes('‎')){
-            status='Draw';
+            status='Draw';//if all the boxes are filled and no winner is declared
     } 
     
     else {
@@ -71,7 +71,7 @@ function calculateWinner(squares) {
       [2, 5, 8],
       [0, 4, 8],
       [2, 4, 6],
-    ];
+    ];//al the possibilities where the winner can be declared
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
       if (squares[a] !== '‎' && squares[a] === squares[b] && squares[a] === squares[c]) { // Check for whitespace character
