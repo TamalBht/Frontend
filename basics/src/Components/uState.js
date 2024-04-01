@@ -1,5 +1,14 @@
 import {useState} from 'react';
 
 function Theme(){
-const [intial,update]=useState(true);
+    const [initial,update]=useState(true);
+//true= dark flase=light
+    function eventHandler(){
+        if(initial){
+            update(false);
+        }
+        else{
+            update(true);
+        }
+    }
 }
