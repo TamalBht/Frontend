@@ -1,14 +1,23 @@
 import {useState} from 'react';
 
 function Theme(){
-    const [initial,update]=useState(true);
+    var [initial,update]=useState(true);
 //true= dark flase=light
     function eventHandler(){
         if(initial){
-            update(false);
+            update( initial=false);
+            return(<div style={{background:"black"}}></div>);
         }
         else{
-            update(true);
+            update(initial=true);
+            return(<div style={{background:"white"}}></div>);
+
         }
     }
+    return(
+        <>
+            <button onClick={eventHandler}></button>
+        </>
+    );
 }
+export default Theme;
