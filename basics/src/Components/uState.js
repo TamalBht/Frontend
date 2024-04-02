@@ -1,6 +1,11 @@
 import {useState} from 'react';
 function Theme(){
-    const [inital,update]=useState(true);
+    const [initial,update]= useState(true);
+    function change(){
+       if(initial){
+            console.log("hello");
+       } 
+    }
     return(
         <button>Click me</button>
     );
