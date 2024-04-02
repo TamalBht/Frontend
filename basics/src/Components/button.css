@@ -1,5 +1,12 @@
 .changee{
     width:100px;
     height: 100px;
-    
+    border: none;
+    top:50vh;
+    left:45vw;
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    font-size: 20px;
+    color: aliceblue;
 }
