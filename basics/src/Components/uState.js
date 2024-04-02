@@ -15,6 +15,7 @@ function Theme(){
        else{
         document.body.style.background=color2;
         document.body.style.color=color1;  
+        
         update(true);
 
        } 
