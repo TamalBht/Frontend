@@ -3,7 +3,7 @@ function Theme(){
     const [initial,update]= useState(true);
     function change(){
        if(initial){
-            console.log("hello");
+            
        } 
     }
     return(
