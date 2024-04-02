@@ -7,12 +7,14 @@ function Theme(){
     const color2="beige";
     function change(){
        if(initial){
-          document.body.style.background=color1; 
+          document.body.style.background=color1;
+          document.body.style.color=color2;
           update(false);
  
        }
        else{
-        document.body.style.background=color2;  
+        document.body.style.background=color2;
+        document.body.style.color=color1;  
         update(true);
 
        } 
