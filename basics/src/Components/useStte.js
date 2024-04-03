@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import Width from './usEffct';
 
 function Counter(){
     const [current,update]=useState(0);
@@ -13,6 +14,7 @@ function Counter(){
             <button onClick={decrease}>-</button>
             <span>{current}</span>
             <button onClick={increase}>+</button>
+            <Width/>
         </>
     );
 }
