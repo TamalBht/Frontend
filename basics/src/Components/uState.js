@@ -2,11 +2,10 @@ import {useState} from 'react';
 import './button.css'
 
 function Theme(){
-    const [initial,update]= useState();
+    const [initial,update]= useState(true);
     const color1="black";
     const color2="beige";
-    document.body.style.background=color2;
-    document.body.style.color=color1;
+    
 
 
     function change(){
