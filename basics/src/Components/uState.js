@@ -14,8 +14,7 @@ function Theme(){
           document.body.style.background=color1;
           document.body.style.color=color2;
           update(false);
-          document.body.style.background=color2;
-          document.body.style.color=color1;
+          
 
 
        }
