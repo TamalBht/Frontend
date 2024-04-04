@@ -23,7 +23,7 @@ function App() {
     res: 0,
   });
   const numClickHandler=(e)=>{
-    e.preventDefault();
+    
     const value = e.target.innerHTML;
 
     if (calc.num.length<16){
@@ -40,7 +40,6 @@ function App() {
     }
   };
   const decimalHandler = (e) => {
-    e.preventDefault();
     const value = e.target.innerHTML;
   
     setCalc({
@@ -49,7 +48,6 @@ function App() {
     });
   };
   const signClickHandler = (e) => {
-    e.preventDefault();
     const value = e.target.innerHTML;
   
     setCalc({
@@ -126,17 +124,17 @@ const resetClickHandler = () => {
                 value={btn}
                 onClick={() => {
                   btn==='C'?
-                  resetClickHandler : 
+                  resetClickHandler() : 
                   btn==='+-'?
-                  invertClickHandler: 
+                  invertClickHandler(): 
                   btn ==='%'?
-                  percentClickHandler: 
+                  percentClickHandler(): 
                   btn==='='?
-                  equalClickHandler:
+                  equalClickHandler():
                    btn==='+' || btn==='-'|| btn==='*'|| btn==='/'? 
-                   signClickHandler: btn==='.'?
-                   decimalHandler: 
-                   numClickHandler;
+                   signClickHandler(btn): btn==='.'?
+                   decimalHandler(): 
+                   numClickHandler(btn);
                 }}
                 
               />
