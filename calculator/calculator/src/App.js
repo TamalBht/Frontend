@@ -11,12 +11,16 @@ const btnValues = [
   [1, 2, 3, "+"],
   [0, ".", "="],
 ];
+const toLocaleString = (num) =>
+  String(num).replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, "$1 ");
+
+const removeSpaces = (num) => num.toString().replace(/\s/g, "");
 
 function App() {
-  let[calc,setCalc]=useState(()=>{
-    sign: "";
-    num: 0;
-    res: 0;
+  let[calc,setCalc]=useState({
+    sign: "",
+    num: 0,
+    res: 0,
   });
   const numClickHandler=(e)=>{
     e.preventDefault();
@@ -55,6 +59,60 @@ function App() {
       num: 0,
     });
   };
+  const equalClickHandler=()=>{
+    if(calc.sign && calc.num){
+      //this sensures that the button cannot be called multiple times with same sign and num
+      const maths = (a, b, sign) =>
+        sign === "+"
+          ? a + b
+          : sign === "-"
+          ? a - b
+          : sign === "X"
+          ? a * b
+          : a / b;
+        setCalc({
+          ...calc,
+          res:
+            calc.num==='0' && calc.sign==='/'?'Error': toLocaleString(
+              maths(
+                Number(removeSpaces(calc.res)),
+                Number(removeSpaces(calc.num)),
+                calc.sign
+              )
+            ),
+            sign: "",
+            num:0,
+        });
+      };
+    };
+  
+const invertClickHandler = () => {
+  setCalc({
+    ...calc,
+    num: calc.num ? calc.num * -1 : 0,//anything other than 0 will be cosidered true
+    res: calc.res ? calc.res * -1 : 0,
+    sign: "",
+  });
+};
+const percentClickHandler = () => {
+  let num = calc.num ? parseFloat(calc.num) : 0;
+  let res = calc.res ? parseFloat(calc.res) : 0;
+
+  setCalc({
+    ...calc,
+    num: (num /= Math.pow(100, 1)),
+    res: (res /= Math.pow(100, 1)),
+    sign: "",
+  });
+};
+const resetClickHandler = () => {
+  setCalc({
+    ...calc,
+    sign: "",
+    num: 0,
+    res: 0,
+  });
+};
   return (
     <Wrapper>
       <Screen value= {calc.num?calc.num:calc.res} />
@@ -67,7 +125,18 @@ function App() {
                 className={btn === "=" ? "equals" : ""}
                 value={btn}
                 onClick={() => {
-                  btn==='C'?resetClickHandler: btn==='+-'?invertClickHandler: btn ==='%'?percentClickHandler: btn==='='?equalClickHandler: btn==='+' || btn==='-'|| btn==='*'|| btn==='/'? signClickHandler: btn==='.'?decimalHandler: numClickHandler
+                  btn==='C'?
+                  resetClickHandler : 
+                  btn==='+-'?
+                  invertClickHandler: 
+                  btn ==='%'?
+                  percentClickHandler: 
+                  btn==='='?
+                  equalClickHandler:
+                   btn==='+' || btn==='-'|| btn==='*'|| btn==='/'? 
+                   signClickHandler: btn==='.'?
+                   decimalHandler: 
+                   numClickHandler;
                 }}
                 
               />
