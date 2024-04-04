@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 import './App.css';
 import Wrapper from "./components/wrapper";
 import Screen from "./components/screen";
@@ -13,9 +13,14 @@ const btnValues = [
 ];
 
 function App() {
+  let[calc,setCalc]=useState(()=>{
+    sign: "";
+    num: 0;
+    res: 0;
+  });
   return (
     <Wrapper>
-      <Screen value="0" />
+      <Screen value= {calc.num?calc.num:calc.res} />
       <ButtonBox>
         {
           btnValues.flat().map((btn, i) => {
@@ -25,8 +30,9 @@ function App() {
                 className={btn === "=" ? "equals" : ""}
                 value={btn}
                 onClick={() => {
-                  console.log(`${btn} clicked!`);
+                  btn==='C'?resetClickHandler: btn==='+-'?invertClickHandler: btn ==='%'?percentClickHandler: btn==='='?equalClickHandler: btn==='+' || btn==='-'|| btn==='*'|| btn==='/'? signHandler: btn==='.'?decimalHandler: numHandler
                 }}
+                
               />
             );
           })
