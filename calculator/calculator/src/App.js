@@ -35,7 +35,7 @@ function App() {
       });
     }
   };
-  const commaClickHandler = (e) => {
+  const decimalHandler = (e) => {
     e.preventDefault();
     const value = e.target.innerHTML;
   
@@ -44,7 +44,17 @@ function App() {
       num: !calc.num.toString().includes(".") ? calc.num + value : calc.num,
     });
   };
+  const signClickHandler = (e) => {
+    e.preventDefault();
+    const value = e.target.innerHTML;
   
+    setCalc({
+      ...calc,
+      sign: value,
+      res: !calc.res && calc.num ? calc.num : calc.res,
+      num: 0,
+    });
+  };
   return (
     <Wrapper>
       <Screen value= {calc.num?calc.num:calc.res} />
@@ -57,7 +67,7 @@ function App() {
                 className={btn === "=" ? "equals" : ""}
                 value={btn}
                 onClick={() => {
-                  btn==='C'?resetClickHandler: btn==='+-'?invertClickHandler: btn ==='%'?percentClickHandler: btn==='='?equalClickHandler: btn==='+' || btn==='-'|| btn==='*'|| btn==='/'? signHandler: btn==='.'?decimalHandler: numClickHandler
+                  btn==='C'?resetClickHandler: btn==='+-'?invertClickHandler: btn ==='%'?percentClickHandler: btn==='='?equalClickHandler: btn==='+' || btn==='-'|| btn==='*'|| btn==='/'? signClickHandler: btn==='.'?decimalHandler: numClickHandler
                 }}
                 
               />
