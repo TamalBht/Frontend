@@ -1,8 +1,8 @@
 button {
-    border-left:3px solid rgba(131, 121, 195, 0.774);
-    border-top:3px solid rgba(131, 121, 195, 0.774);
-    border-bottom:3px solid rgba(38, 37, 43, 0.794);
-    border-right:3px solid rgba(38, 37, 43, 0.794);
+    border-left:3px solid rgba(131, 121, 195, 0.574);
+    border-top:3px solid rgba(131, 121, 195, 0.574);
+    border-bottom:3px solid rgba(38, 37, 43, 0.594);
+    border-right:3px solid rgba(38, 37, 43, 0.594);
 
 
 
@@ -21,10 +21,10 @@ button {
     background:linear-gradient(rgb(80, 60, 209),rgba(123, 104, 246, 0.97)) ;
     text-shadow: 10px 10px 10px #000;
     transition: all ease-in-out 350ms;
-    border-right:3px solid rgba(131, 121, 195, 0.774);
-    border-bottom:3px solid rgba(131, 121, 195, 0.774);
-    border-left:3px solid rgba(38, 37, 43, 0.794);
-    border-top:3px solid rgba(38, 37, 43, 0.794);
+    border-right:3px solid rgba(131, 121, 195, 0.574);
+    border-bottom:3px solid rgba(131, 121, 195, 0.574);
+    border-left:3px solid rgba(38, 37, 43, 0.594);
+    border-top:3px solid rgba(38, 37, 43, 0.594);
 
   }
   
