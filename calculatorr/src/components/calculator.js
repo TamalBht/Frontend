@@ -24,7 +24,7 @@ function Calculator(){
         <Wrapper>
             <Screen value={value}></Screen>
             <ButtonBox>
-        <Button value="C" onclick={()=>{handleClick('C')}}/>
+        <Button value="C" onClick={()=>{handleClick('C')}}/>
         <Button value="←" onClick={() => handleClick('<-')} />
         <Button value="/" onClick={() => handleClick('/')} />
         <Button value="." onClick={() => handleClick('.')} />
