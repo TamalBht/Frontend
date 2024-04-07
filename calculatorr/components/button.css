@@ -1,0 +1,38 @@
+button {
+    border-left:3px solid rgba(131, 121, 195, 0.574);
+    border-top:3px solid rgba(131, 121, 195, 0.574);
+    border-bottom:3px solid rgba(38, 37, 43, 0.594);
+    border-right:3px solid rgba(38, 37, 43, 0.594);
+
+
+
+    background:linear-gradient(rgba(123, 104, 246, 0.97),rgb(80, 60, 209)) ;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    
+    border-radius: 10px;
+    outline: none;
+    transition: all ease-in-out 350ms;
+
+  }
+  
+  button:hover {
+    background:linear-gradient(rgb(80, 60, 209),rgba(123, 104, 246, 0.97)) ;
+    text-shadow: 10px 10px 10px #000;
+    transition: all ease-in-out 350ms;
+    border-right:3px solid rgba(131, 121, 195, 0.574);
+    border-bottom:3px solid rgba(131, 121, 195, 0.574);
+    border-left:3px solid rgba(38, 37, 43, 0.594);
+    border-top:3px solid rgba(38, 37, 43, 0.594);
+
+  }
+  
+  .equals {
+    grid-column: 3 / 5;
+    background-color: rgb(243, 61, 29);
+  }
+  
+  .equals:hover {
+    background-color: rgb(228, 39, 15);
+  }
