@@ -8,3 +8,12 @@
   transition: all ease-in-out 550ms;
 
 }
+.equalss{
+  width: 320%;
+  background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
+  opacity: 55%;
+}
+.equalss:hover{
+  background: linear-gradient(107.2deg,rgb(247, 0, 0) 91.1%, rgb(150, 15, 15) 10.6%);
+
+}
