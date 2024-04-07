@@ -40,7 +40,7 @@ function App() {
     }
   };
   const decimalHandler = (e) => {
-    const value = e.target.innerHTML;
+    const value = parseFloat(e);
   
     setCalc({
       ...calc,
@@ -48,7 +48,7 @@ function App() {
     });
   };
   const signClickHandler = (e) => {
-    const value = e.target.innerHTML;
+    const value = e;
   
     setCalc({
       ...calc,
@@ -133,8 +133,8 @@ const resetClickHandler = () => {
                   equalClickHandler():
                    btn==='+' || btn==='-'|| btn==='*'|| btn==='/'? 
                    signClickHandler(btn): btn==='.'?
-                   decimalHandler(): 
-                   numClickHandler(btn);
+                   decimalHandler(btn): 
+                   numClickHandler({btn});
                 }}
                 
               />
