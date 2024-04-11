@@ -1,9 +1,12 @@
-
+import Wrapper from './Components/Wrapper.js';
 import './App.css';
 
 function App() {
   return (
-   <h1>Weather</h1>
+   <Wrapper>
+       
+
+   </Wrapper>
   );
 }
 

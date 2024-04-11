@@ -1,0 +1,8 @@
+.Wrapper{
+    min-height: 100vh;
+    min-width: 100vw;
+    margin:0;padding:0;
+    background-image: url(./Images/michael-diane-weidner-h-rP5KSC2W0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
