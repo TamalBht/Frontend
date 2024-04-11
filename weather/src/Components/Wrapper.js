@@ -1,4 +1,4 @@
-import 'Wrapper.css'
+import "./Wrapper.css"
 function Wrapper({children}){
     return(
         <div className='Wrapper'>
