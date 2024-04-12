@@ -2,8 +2,23 @@
     min-height: 100vh;
     min-width: 100vw;
     margin:0;padding:0;
-    background-image: url(./Images/Background\ \(2\).jpg);
+    /* background-image: url(./Images/Background\ \(2\).jpg); */
     backdrop-filter: blur(10px);
+
+    position: absolute;
+    z-index: -1;
+}
+.subWrapper{
+    background: url(./Images/clouds.jpg);
     background-size: cover;
+    background-repeat:no-repeat;
     background-position: center;
+    z-index:3 ;
+    position: inherit;
+    height: 80vh;
+    width: 90vw;
+    margin: 10vh;
+    border-radius: 25px;
+    
+
 }
