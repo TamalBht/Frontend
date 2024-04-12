@@ -21,6 +21,8 @@ const DateTime = () => {
     <div className='dateTime'>
       <div className="day">{dayOfWeek}</div>
       <div className="time">{time}</div>
+      
+
     </div>
   );
 }
