@@ -12,8 +12,8 @@
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
-    z-index:3 ;
-    position: inherit;
+    
+    position: relative;
     height: 80vh;
     width: 90vw;
     margin: 10vh;
