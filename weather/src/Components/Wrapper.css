@@ -3,6 +3,7 @@
     min-width: 100vw;
     margin:0;padding:0;
     background-image: url(./Images/Background\ \(2\).jpg);
+    backdrop-filter: blur(10px);
     background-size: cover;
     background-position: center;
 }
