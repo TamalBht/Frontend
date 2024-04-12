@@ -1,0 +1,9 @@
+@font-face {
+    font-family: poppins;
+    src: url(./Fonts/Poppins-Black.ttf);
+}
+.dateTime{
+    backdrop-filter: blur(10px);
+    width: fit-content;
+    color: #e9e9e9;
+}
