@@ -6,7 +6,6 @@ function Wrapper({children}){
         <div className='Wrapper'>
             <div className='subWrapper'>
                 <DateTime/>
-                <SearchButton/>
             </div>            
         </div>
     );
