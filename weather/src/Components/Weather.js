@@ -24,7 +24,7 @@ const Weather=()=>{
           .then(response => response.json())
           .then(data => setWeatherData(data))
           .catch(error => console.error(error));
-      }, [location]);
+      }, []);
       const handleLocationChange = (event) => {
         setLocation(event.target.value);
       };
@@ -36,12 +36,14 @@ const Weather=()=>{
           
       };
     
+      console.log({weatherData});
 
     return(
         <div className='main-content'>
             <SearchButton location={location} onLocationChange={handleLocationChange} click={handleSearchClick}/>
             <div className='location'><MapPin/>{location}</div>
-            <div className='current-weather'>{weatherData.main.temp}</div>
+            <div className='tempp'>{weatherData.main.temp}</div>
+            
            
         </div>
     );
