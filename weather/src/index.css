@@ -6,6 +6,7 @@ body {
   background:url(./Components/Images/Background\ \(2\).jpg);
   background-size: cover;
   background-position: center;
+  user-select: none;
 }
 
 

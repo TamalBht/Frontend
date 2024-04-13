@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import "./Weather.css";
+
 import { Search,MapPin  } from 'lucide-react';
 const SearchButton=({ location, onLocationChange,click })=>{
     
@@ -30,7 +32,7 @@ const Weather=()=>{
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}&units=metric`)
           .then(response => response.json())
           .then(data => setWeatherData(data))
-          .catch(error => console.error(error));
+          .catch(error => console.log(error));
           
       };
     
@@ -39,6 +41,7 @@ const Weather=()=>{
         <div className='main-content'>
             <SearchButton location={location} onLocationChange={handleLocationChange} click={handleSearchClick}/>
             <div className='location'><MapPin/>{location}</div>
+            <div className='current-weather'>{weatherData.main.temp}</div>
            
         </div>
     );
