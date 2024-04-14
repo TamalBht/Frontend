@@ -18,6 +18,12 @@
     width: 90vw;
     margin: 10vh;
     border-radius: 25px;
-    
 
+}
+@media (max-width:768px) {
+    .subWrapper{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
 }
