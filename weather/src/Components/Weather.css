@@ -87,6 +87,7 @@
     .search{
         transform: translateX(0rem);
         left: -3rem;
+        width: 30vw;
 
     }
 }
