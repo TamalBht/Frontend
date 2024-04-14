@@ -1,6 +1,6 @@
 .Wrapper{
-    min-height: 100vh;
-    min-width: 100vw;
+    height: 100%;
+    width: 100%;
     margin:0;padding:0;
     /* background-image: url(./Images/Background\ \(2\).jpg); */
     backdrop-filter: blur(10px);
@@ -26,6 +26,12 @@
         height: 100vh;
         width: 100vw;
         border-radius: 0px;
-        background-size: auto;
+        background: none;
+    }
+    .Wrapper{
+        background: url(./Images/clouds.jpg);
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center;
     }
 }
