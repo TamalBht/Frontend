@@ -84,5 +84,8 @@
 
 }
 @media (max-width:768px) {
-    
+    .search{
+        transform: translateX(0rem);
+
+    }
 }
