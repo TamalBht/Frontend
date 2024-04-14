@@ -19,7 +19,7 @@ const DateTime = () => {
 
   return (
     <div className='dateTime'>
-      <div className="day">{dayOfWeek}</div>
+      <div className="day">Wednesday</div>
       <div className="time">{time}</div>
       
 

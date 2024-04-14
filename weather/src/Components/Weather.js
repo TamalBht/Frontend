@@ -45,7 +45,7 @@ const Weather=()=>{
     return(
         <div className='main-content'>
             <SearchButton location={location} onLocationChange={handleLocationChange} click={handleSearchClick}/>
-            <div className='location'><MapPin/>Wednesday</div>
+            <div className='location'><MapPin/>{location}</div>
             <div className='tempp-details'>
                 {weatherData&&(
                     <>
