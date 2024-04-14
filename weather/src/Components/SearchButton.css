@@ -11,12 +11,14 @@
     border-radius: 10px;
     box-shadow: 3px 3px 5px #000;
     margin: 0 10px;
+    height: 50px;
+
 }
 .search button{
     background: transparent;
     backdrop-filter: blur(10px);
     border: none;
-    height: 40px;
+    height: 100%;
     transition: all ease-in-out 350ms;
     
 
@@ -30,6 +32,8 @@
     color: #e9e9e9;
     padding:0px 20px  ;
     font-family: ox;
+    font-size: 17px;
+    font-weight: 700;
 
 
     
@@ -43,7 +47,7 @@
 ::placeholder {
     color: #e9e9e9;
     opacity: 1; /* Firefox */
-    font-size: larger;
+    font-size: 15px;
     font-family: ox;
 
   }

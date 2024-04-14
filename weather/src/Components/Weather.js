@@ -49,11 +49,15 @@ const Weather=()=>{
             <div className='tempp-details'>
                 {weatherData&&(
                     <>
-                        <div className='Weather-type'><Cloud/> Weather: {weatherData.weather[0].main}</div>
-                        <p className='temp'><Sun/>Temperature: {weatherData.main.temp}°C</p>
-                        <p className='temp'><ThermometerSun />Feels Like: {weatherData.main.feels_like}°C</p>
-                        <p className='temp'><Waves/>Wind Speed: {weatherData.wind.speed} kmph</p>
-                        <p className='temp'><Droplet/> Humidity: {weatherData.main.humidity}gm/cc</p>
+                        <div className='parent-info'>
+                            <div className='Weather-type'><Cloud/> Weather: {weatherData.weather[0].main}</div>
+                            <div className='info'>
+                                <p className='temp'><Sun/>Temperature: {weatherData.main.temp}°C</p>
+                                <p className='temp'><ThermometerSun />Feels Like: {weatherData.main.feels_like}°C</p>
+                                <p className='temp'><Waves/>Wind Speed: {weatherData.wind.speed} kmph</p>
+                                <p className='temp'><Droplet/> Humidity: {weatherData.main.humidity}gm/cc</p>
+                            </div>
+                        </div>
                     </>
                 
                 
