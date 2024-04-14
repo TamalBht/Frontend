@@ -83,3 +83,6 @@
     transition: all ease-in-out 350ms;
 
 }
+@media (max-width:768px) {
+    
+}
