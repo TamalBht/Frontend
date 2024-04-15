@@ -110,6 +110,6 @@
         font-size: 0.9rem;
     }
     .search{
-        left: -35vw;
+        width: 100%;
     }
 }
