@@ -8,10 +8,21 @@ body {
   background-position: center;
   user-select: none;
 }
+
 @media (max-width:768px) {
   body{
     overflow: hidden;
     min-height: 100vh;
     min-width: 100vw;
+  }
+}
+@media (max-width:426px){
+  body{
+    background:url(./Components/Images/clouds.jpg);
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    background-position: center;
+
   }
 }

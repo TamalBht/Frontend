@@ -83,8 +83,10 @@
     transition: all ease-in-out 350ms;
 
 }
+
 @media (max-width:768px) {
     .search{
+        transform: translateX(0);
         left: -28vw;
         width: 30vw;
 
@@ -104,11 +106,30 @@
         position: relative;
     }
 }
-@media (max-width:375px) {
+@media (max-width:376px) {
     .info{
         font-size: 0.9rem;
     }
     .search{
         width: 100%;
+        left: -60vw;
+    }
+    .search input{
+        border: none;
+    }
+    .location{
+        font-size: 2.5rem;
+        left:-40vw;
+    }
+    .Weather-type{
+        left:-60vw;
+    }.info{
+        font-size: 0.8rem;
+        top: 0.5vh;
+    }
+}
+@media (width:320px) {
+    .info{
+        right: 57vw;
     }
 }

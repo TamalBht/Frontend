@@ -20,6 +20,7 @@
     border-radius: 25px;
 
 }
+
 @media (max-width:768px) {
     .subWrapper{
         margin: 0;
@@ -32,5 +33,10 @@
         background: url(./Images/clouds.jpg);
         background-size: 100%;
         background-repeat:no-repeat;
+    }
+}
+@media (max-width:426px) {
+    .Wrapper{
+        backdrop-filter: blur(0px);
     }
 }
