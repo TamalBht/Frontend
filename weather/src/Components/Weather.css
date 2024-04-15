@@ -85,7 +85,6 @@
 }
 @media (max-width:768px) {
     .search{
-        transform: translateX(0rem);
         left: -28vw;
         width: 30vw;
 
