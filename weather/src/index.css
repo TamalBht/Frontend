@@ -11,5 +11,7 @@ body {
 @media (max-width:768px) {
   body{
     overflow-x: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
   }
 }
