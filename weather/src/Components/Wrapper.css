@@ -31,6 +31,6 @@
     .Wrapper{
         background: url(./Images/clouds.jpg);
         background-size: 100%;
-        background-repeat:repeat;
+        background-repeat:no-repeat;
     }
 }
