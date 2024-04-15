@@ -45,3 +45,14 @@
     opacity: 0.8;
 
 }
+@media (max-width:768px) {
+    .day{
+        font-size: 2rem;
+        left: 0rem;
+        top:-3rem;
+    }
+    .dateTime{
+        position: relative;
+        left:-2rem;
+    }
+}

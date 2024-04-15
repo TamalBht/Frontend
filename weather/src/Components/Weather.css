@@ -86,12 +86,22 @@
 @media (max-width:768px) {
     .search{
         transform: translateX(0rem);
-        left: -3rem;
+        left: -28vw;
         width: 30vw;
 
     }
     .location{
-        font-size: 5rem;
-        left: 0rem;
+        font-size: 3rem;
+        left: -28vw;
+        bottom: 10vh;
+    }
+    .Weather-type{
+        left:-38vw;font-size: 28px;
+    }
+    .info{
+        font-size: 1.3rem;
+        top:10vh;
+        right:42vw;
+        position: relative;
     }
 }
