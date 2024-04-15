@@ -38,7 +38,7 @@
 }
 .time{
     height:40%;
-    width: 50%;
+    width: fit-content;
     padding: 10px;
     font-size: 1.5rem;
     text-shadow: 5px 5px 3px rgba(0,0,0,0.3);
@@ -54,8 +54,5 @@
     .dateTime{
         position: relative;
         left:-2rem;
-    }
-    .time{
-        width: fit-content;
     }
 }
