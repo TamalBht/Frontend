@@ -38,5 +38,6 @@
 @media (max-width:426px) {
     .Wrapper{
         backdrop-filter: blur(0px);
+        background: transparent;
     }
 }
