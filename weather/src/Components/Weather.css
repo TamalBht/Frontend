@@ -128,8 +128,9 @@
         top: 0.5vh;
     }
 }
-@media (width:320px) {
+@media (max-width:376px) {
     .info{
         right: 57vw;
+        font-size: 0.6rem;
     }
 }
