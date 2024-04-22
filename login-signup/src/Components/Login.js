@@ -1,4 +1,6 @@
+import { Link,Route } from "react-router-dom";
 import "./Login.css"
+import ""
 function Login(){
     return(
        <div className="login-wrapper">
@@ -12,7 +14,8 @@ function Login(){
             <input type="password" id="pwd" name="pwd" /><br></br>
         </form>
         <button>Login</button>
-        
+        <Link to={"/Signup"}>New here?</Link>
+        <Route path='/Signup' element={<Login/>}/>
        </div>
     );
 }
