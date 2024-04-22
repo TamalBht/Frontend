@@ -1,7 +1,9 @@
 import "./Login.css"
 function Login(){
     return(
-        <h1 className="login">This is login page</h1>
+        <form className="login">
+            
+        </form>
     );
 }
 export default Login;
