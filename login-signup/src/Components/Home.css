@@ -1,0 +1,23 @@
+.Click{
+    color: aliceblue;
+    text-decoration: none;
+    width: fit-content;
+    background-color: #171120;
+    background-image: linear-gradient(180deg, #171120 0%, #FF83cd 100%);
+    position: relative;
+    padding: 30px;
+    border-radius: 20px;
+    left: 50%;
+    right: 50%;
+    top:50vh;
+    bottom:50vh;
+
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #FF83cd;
+background-image: linear-gradient(315deg, #FF83cd 0%, #171120 74%);
+height: 100vh;
+}
