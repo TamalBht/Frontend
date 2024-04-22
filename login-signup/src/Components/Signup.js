@@ -1,5 +1,6 @@
-function Signup(){
+function Sign(){
     return(
         <h1>Signup page</h1>
     );
 }
+export default Sign;

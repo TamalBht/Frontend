@@ -14,3 +14,12 @@
     top:30vh;
     position: relative;
 }
+input{
+    float: right;
+}
+.login-wrapper h1{
+    color: #fff;
+}
+.login-wrapper label{
+    font-size: 1.8rem;
+}
