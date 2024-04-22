@@ -8,9 +8,9 @@
     padding: 30px;
     border-radius: 20px;
     left: 50%;
-    right: 50%;
+    right: 60%;
     top:50vh;
-    bottom:50vh;
+    bottom:90vh;
 
 }
 a{
@@ -18,6 +18,6 @@ a{
 }
 body{
     background-color: #FF83cd;
-background-image: linear-gradient(315deg, #FF83cd 0%, #171120 74%);
+background-image: radial-gradient( #FF83cd , #171120 );
 height: 100vh;
 }
