@@ -1,4 +1,5 @@
 import "./Signup.css"
+import { Link } from "react-router-dom";
 function Sign(){
     return(
         <div className="signup-wrapper">
@@ -12,12 +13,13 @@ function Sign(){
            <label for="mail">E-mail:</label>
             <input type="text"  name="mail" placeholder="Email Address"/><br></br>
            </div>
-           <div className="signcontent-content">
+           <div className="sign-content">
            <label for="pwd">Password:</label>
             <input type="password"  name="pwd" /><br></br>
            </div>
         </form>
         <button>Signup</button>
+        <Link to={"/Login"}>Already have an account?</Link>
         
        
        </div>

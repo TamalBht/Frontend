@@ -2,8 +2,8 @@
     color: aliceblue;
     text-decoration: none;
     width: fit-content;
-    background-color: #171120;
-    background-image: linear-gradient(180deg, #171120 0%, #FF83cd 100%);
+    background-image: linear-gradient(45deg, #171120, #FF83cd  );
+
     position: relative;
     padding: 30px;
     border-radius: 20px;
