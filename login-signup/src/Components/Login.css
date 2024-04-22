@@ -1,3 +1,16 @@
 .login{
     color: aliceblue;
 }
+.login-wrapper{
+    border:1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: fit-content;
+    left: 50vw;
+    transform: translateX(-50%);
+    top:30vh;
+    position: relative;
+}
