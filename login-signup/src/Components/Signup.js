@@ -18,7 +18,7 @@ function Sign(){
             <input type="password"  name="pwd" /><br></br>
            </div>
         </form>
-        <button>Signup</button>
+        <button type="submit">Signup</button>
         <Link to={"/Login"}>Already have an account?</Link>
         
        

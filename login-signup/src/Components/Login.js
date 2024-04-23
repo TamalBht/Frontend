@@ -1,6 +1,8 @@
 import { Link,Route, Routes } from "react-router-dom";
 import "./Login.css"
 import Sign from "./Signup.js";
+import { initializeApp } from 'firebase/app';
+
 
 function Login(){
     return(
@@ -17,7 +19,7 @@ function Login(){
             <input type="password"  name="pwd" /><br></br>
            </div>
         </form>
-        <button>Login</button>
+        <button type="submit">Login</button>
         <Link to={"/Signup"}>New here?</Link>
        
        </div>
