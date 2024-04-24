@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import {  useState } from "react";
 import {auth} from "./firebase"
-function Sign(){
+const Sign=()=>{
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
   
-    const handleSave =(e)=>{
-          e.preventDefault();
+    const handleSave =()=>{
+          
           console.log({email});
           console.log({password});
           createUserWithEmailAndPassword(auth,email,password)
@@ -24,7 +24,7 @@ function Sign(){
     return(
         <div className="signup-wrapper">
         <h1>Signup</h1>
-        <form className="signup"  onSubmit={handleSave}>
+        <form className="signup"  onSubmit={ handleSave }>
         
            <div className='sign-content'>
            <label htmlFor="mail">E-mail:</label>
