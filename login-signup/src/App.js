@@ -6,8 +6,9 @@ import Sign from './Components/Signup.js';
 
 function App() {
   return (
+    
     <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/' element={<Link to={"/Signup"}><Home/></Link>}/>
       <Route path='/Login' element={<Login/>}/>
       <Route path='/Signup' element={<Sign/>}/>
 
