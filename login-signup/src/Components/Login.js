@@ -1,7 +1,6 @@
-import { Link,Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Login.css"
-import Sign from "./Signup.js";
-import { initializeApp } from 'firebase/app';
+
 
 
 function Login(){

@@ -4,21 +4,23 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import {  useState } from "react";
 import {auth} from "./firebase"
 function Sign(){
-    
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+  
+    const handleSave =(e)=>{
+          e.preventDefault();
+          console.log({email});
+          console.log({password});
+          createUserWithEmailAndPassword(auth,email,password)
+              .then((userCredential)=>{
+                  console.log(userCredential)
+              }).catch ((error)=>{
+                  console.log(error);
+              })
+  
+          
+      }
 
-    const handleSave =async(e)=>{
-        e.preventDefault();
-        await createUserWithEmailAndPassword(auth,email,password)
-            .then((userCredential)=>{
-                console.log(userCredential)
-            }).catch ((error)=>{
-                console.log(error);
-            })
-
-        
-    }
     return(
         <div className="signup-wrapper">
         <h1>Signup</h1>
@@ -35,8 +37,7 @@ function Sign(){
         </form>
         <button type="submit" onClick={()=>{
             console.log('success');
-            console.log({email});
-            console.log({password});
+           
         }}>Signup</button>
         <Link to={"/Login"}>Already have an account?</Link>
         
