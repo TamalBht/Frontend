@@ -1,7 +1,7 @@
 import "./Signup.css"
 import { Link } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import {  useState} from "react";
+import {  useState } from "react";
 import {auth} from "./firebase"
 function Sign(){
     
@@ -26,14 +26,18 @@ function Sign(){
         
            <div className='sign-content'>
            <label htmlFor="mail">E-mail:</label>
-            <input type="text"  name="mail" placeholder="Email Address" onChange={(e)=>{setEmail(e.target.value)}}/><br></br>
+            <input type="text"  name="mail" placeholder="Email Address"id="mail" onChange={(e)=>{setEmail(e.target.value)}}/><br></br>
            </div>
            <div className="sign-content">
            <label htmlFor="pwd">Password:</label>
-            <input type="password"  name="pwd" onChange={(e)=>{setPassword(e.target.value)}}/><br></br>
+            <input type="password"  name="pwd" id="pwd" onChange={(e)=>{setPassword(e.target.value)}}/><br></br>
            </div>
         </form>
-        <button type="submit" >Signup</button>
+        <button type="submit" onClick={()=>{
+            console.log('success');
+            console.log({email});
+            console.log({password});
+        }}>Signup</button>
         <Link to={"/Login"}>Already have an account?</Link>
         
        
