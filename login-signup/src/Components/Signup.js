@@ -25,11 +25,11 @@ function Sign(){
         <form className="signup"  onSubmit={handleSave}>
         
            <div className='sign-content'>
-           <label >E-mail:</label>
+           <label htmlFor="mail">E-mail:</label>
             <input type="text"  name="mail" placeholder="Email Address" onChange={(e)=>{setEmail(e.target.value)}}/><br></br>
            </div>
            <div className="sign-content">
-           <label >Password:</label>
+           <label htmlFor="pwd">Password:</label>
             <input type="password"  name="pwd" onChange={(e)=>{setPassword(e.target.value)}}/><br></br>
            </div>
         </form>
