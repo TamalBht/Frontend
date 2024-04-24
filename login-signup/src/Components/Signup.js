@@ -2,7 +2,7 @@ import "./Signup.css"
 import { Link } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import {  useState} from "react";
-import auth from "./firebase"
+import {auth} from "./firebase"
 function Sign(){
     
   const [email, setEmail] = useState('')
@@ -10,7 +10,7 @@ function Sign(){
 
     const handleSave =async(e)=>{
         e.preventDefault();
-        createUserWithEmailAndPassword(auth,email,password)
+        await createUserWithEmailAndPassword(auth,email,password)
             .then((userCredential)=>{
                 console.log(userCredential)
             }).catch ((error)=>{
