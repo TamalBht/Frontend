@@ -10,12 +10,12 @@ function Login(){
         <form className="login">
             
            <div className='login-content'>
-           <label >E-mail:</label>
-            <input type="text"  name="mail" placeholder="Email Address"/><br></br>
+           <label htmlFor="maill">E-mail:</label>
+            <input type="text"  name="maill" placeholder="Email Address" id="maill"/><br></br>
            </div>
            <div className="login-content">
-           <label >Password:</label>
-            <input type="password"  name="pwd" /><br></br>
+           <label htmlFor="pwdd">Password:</label>
+            <input type="password"  name="pwdd" id="pwdd"/><br></br>
            </div>
         </form>
         <button type="submit">Login</button>
